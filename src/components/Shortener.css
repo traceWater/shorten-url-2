@@ -1,0 +1,131 @@
+.shorten-form {
+  background: url(../../images/bg-shorten-mobile.svg)
+    hsl(var(--primary-dark-violet)) no-repeat;
+  background-size: cover;
+  width: calc(100% - 2rem);
+  height: 200px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin: 1rem;
+}
+
+.shorten-form input {
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 80%;
+  height: 3rem;
+  padding: 0 1rem;
+}
+
+input:active {
+  outline: none;
+}
+
+.form-input {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.input-box {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+input:invalid {
+  border-color: hsl(var(--secondary-red));
+}
+
+input:invalid::placeholder {
+  color: hsl(var(--secondary-red));
+  opacity: 0.5;
+}
+
+.shorten-form [type="submit"] {
+  background-color: hsl(var(--primary-cyan));
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  width: 100%;
+}
+
+#search-btn {
+  background-color: white;
+  align-self: center;
+  border: none;
+  border-radius: 10px;
+  width: 80%;
+}
+
+.shorten-form [type="submit"]:active {
+  background-color: hsla(var(--primary-cyan), 0.5);
+  transition: all 0.3s ease;
+}
+
+.error-msg {
+  font-size: 12px;
+  color: hsl(var(--secondary-red));
+  font-style: italic;
+  width: 80%;
+}
+
+@media (min-width: 800px) {
+  .shorten-form {
+    background: url(../../images/bg-shorten-desktop.svg)
+      hsl(var(--primary-dark-violet)) no-repeat;
+    background-size: cover;
+    height: 150px;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0 3rem;
+    margin: 1rem;
+    width: 85%;
+  }
+
+  .input-box {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-right: 1rem;
+    align-items: flex-start;
+    flex: 4;
+    margin-bottom: 6px;
+  }
+
+  .shorten-form [name="url"] {
+    width: 100%;
+  }
+
+  #search-btn {
+    flex: 1;
+  }
+
+  .error-msg {
+    min-height: 1rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .shorten-form {
+    height: 200px;
+  }
+
+  .input-box {
+    margin-bottom: 22px;
+    margin-right: 2rem;
+    flex: 6;
+  }
+
+  .shorten-form input {
+    height: 4rem;
+  }
+}

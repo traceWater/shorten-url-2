@@ -1,0 +1,58 @@
+.btn {
+  border: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn:active {
+  outline: none;
+}
+
+.btn--round {
+  border-radius: 20px;
+}
+
+.btn--regular {
+  border-radius: 5px;
+}
+
+.btn--mobile {
+  width: 80%;
+  height: 2.5rem;
+}
+
+.btn--small {
+  width: 20%;
+  height: 2rem;
+}
+
+.btn--nav {
+  width: 100px;
+  height: 2rem;
+}
+
+.btn--medium {
+  width: 200px;
+  height: 3rem;
+}
+
+.btn--long {
+  width: 90%;
+  height: 2.5rem;
+}
+
+.cyan {
+  background-color: hsl(var(--primary-cyan));
+  color: white;
+}
+
+.violet {
+  background-color: hsl(var(--primary-dark-violet));
+  color: white;
+}
+
+.cyan:hover,
+.cyan:active {
+  background-color: hsla(var(--primary-cyan), 0.5);
+  transition: all 0.3s ease;
+}
